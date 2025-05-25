@@ -38,6 +38,7 @@ header h1 {
     margin-top: 10px;
     border-radius: 10px;
     font-size: 1.8rem
+    
 }
 
 header ul {
@@ -45,7 +46,8 @@ header ul {
     padding: 0;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 15px;
 
 
 }
@@ -118,6 +120,16 @@ main {
     background-color: var(--secondary-color);
     margin: 10px;
     border-radius: 5px;
-    
+}
 
+.skiptocontent a {
+	position: absolute;
+    top: -40px;
+	left: 0;
+    color: white;
+    font-weight: bold;
+	background-color: red;
+}
+.skiptocontent a:focus {
+	top:0
 }
