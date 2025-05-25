@@ -23,32 +23,35 @@ body p {
 header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     text-align: center;
 }
+
+
 
 header h1 {
     grid-row: 1/2;
     background-color: var(--secondary-color);
     color: var(--accent-color);
     margin: 5px;
-    width: 300px;
+    width: 400px;
     padding: 10px 20px;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
-    font-size: 1.8rem
+    font-size: 2.5rem
     
 }
 
 header ul {
-    margin: 15px;
     padding: 0;
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr;
     justify-content: end;
-    gap: 15px;
-
+    justify-items: end;
+    max-width: 1400px;
+    margin: 0 auto;
 
 }
 
@@ -59,16 +62,17 @@ header a {
 
 header li {
     list-style-type: none;
-    background-color: var(--secondary-color);
     gap: 10px;
     padding: 10px;
-    border-radius: 5px;
+    grid-row: 1;
+    max-width: 960px;
+    font-size: 1.2rem;
 }
 
 header nav {
     grid-row: 2/3;
-    margin-left: 80px;
-    margin-right: 80px;
+    border-top: solid var(--primary-color) 5px;
+    border-bottom: solid var(--primary-color) 5px;
 }
 
 main {
@@ -82,7 +86,7 @@ main {
 .book-filters {
     grid-column: 3/4;
     grid-row: 1;
-    background-color: var(--primary-color);
+    border: solid 5px var(--primary-color);
     margin: 5px;
 }
 
@@ -93,10 +97,10 @@ main {
     
 }
 
-
 .book-display {
     grid-column: 2/3;
     text-align: center;
+    padding-left: 50px;
     grid-row: 1;
 }
 
@@ -109,11 +113,9 @@ main {
 .book-info {
     grid-column: 1/2;
     grid-row: 1;
-    background-color: var(--primary-color);
+    border-right: solid var(--primary-color);
     margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: right;
 }
 
 .book-info h1, h2 {
