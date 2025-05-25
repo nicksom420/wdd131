@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #241909;
+    --secondary-color: #DFD6A7;
+    --accent-color: #0F1108;
+    --heading-font: 'Courier', Monospace;
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+body h1, h2 {
+    font-family: var(--heading-font);
+}
+
+body p {
+    font-family: var(--paragraph-font);
+}
+
+
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+header h1 {
+    grid-row: 1/2;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    margin: 5px;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.8rem
+}
+
+header ul {
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+header a {
+    text-decoration: none;
+    color:  var(--accent-color);
+}
+
+header li {
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav {
+    grid-row: 2/3;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    grid-template-rows: 1fr;
+    background-color: var(--secondary-color);
+
+}
+
+.book-filters {
+    grid-column: 3/4;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    margin: 5px;
+}
+
+.book-filters p {
+    background-color: var(--secondary-color);
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+
+.book-display {
+    grid-column: 2/3;
+    text-align: center;
+    grid-row: 1;
+}
+
+.book-display img {
+    max-width: 350px;
+    border: solid black 5px;
+
+}
+
+.book-info {
+    grid-column: 1/2;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-info h1, h2 {
+    background-color: var(--secondary-color);
+    margin: 10px;
+    border-radius: 5px;
+    
+
+}
