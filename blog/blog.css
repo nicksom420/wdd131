@@ -43,16 +43,11 @@ header h1 {
     
 }
 
-header ul {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 1fr;
-    justify-content: end;
-    justify-items: end;
-    max-width: 1400px;
-    margin: 0 auto;
-
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-right: 100px;
 }
 
 header a {
@@ -64,30 +59,31 @@ header li {
     list-style-type: none;
     gap: 10px;
     padding: 10px;
-    grid-row: 1;
     max-width: 960px;
     font-size: 1.2rem;
 }
 
 header nav {
     grid-row: 2/3;
+    display: flex;
+    justify-content: flex-end;
     border-top: solid var(--primary-color) 5px;
     border-bottom: solid var(--primary-color) 5px;
+    align-items: center;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--secondary-color);
-
 }
 
 .book-filters {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1;
     border: solid 5px var(--primary-color);
     margin: 5px;
+    margin-right: 50px;
 }
 
 .book-filters p {
@@ -97,22 +93,34 @@ main {
     
 }
 
+.book-entry {
+    grid-column: 1 / 2;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    margin: 10px;
+}
+
 .book-display {
-    grid-column: 2/3;
-    text-align: center;
-    padding-left: 50px;
-    grid-row: 1;
+    flex: 2;
 }
 
 .book-display img {
+    display: block;
     max-width: 350px;
-    border: solid black 5px;
+    margin: 0 auto;
 
 }
 
+.book-display h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+
 .book-info {
-    grid-column: 1/2;
-    grid-row: 1;
+    flex: 1;
     border-right: solid var(--primary-color);
     margin: 5px;
     text-align: right;
