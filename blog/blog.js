@@ -41,11 +41,11 @@ stars: "⭐⭐⭐⭐⭐"
 
 function buildArticle(articles)
 {
-    const articleContainer = document.getElementById('articles-container');
-    articles.forEach(function(item)
+    const articleContainer = document.getElementById('articles-container'); //Stores the article container in a variable
+    articles.forEach(function(item) // Loops through each article in the list to be added
     {
-        const article = document.createElement('article');
-        article.classList.add('book-entry');
+        const article = document.createElement('article'); //Creates a new article element
+        article.classList.add('book-entry'); //Adds it to the class so that css will apply
         const articleContent = `
                     <div class="book-info">
                         <h2>${item.date}</h2>
@@ -58,9 +58,9 @@ function buildArticle(articles)
                         <img src="${item.imgSrc}" alt="${item.imgAlt}">
                         <p>${item.description}</p>
                     </div>
-            `;
-        article.innerHTML = articleContent
-        articleContainer.appendChild(article);
+            `; // Stores the html to be added as well as the items attributes 
+        article.innerHTML = articleContent //Converts it to HTML 
+        articleContainer.appendChild(article); // Adds it to the page
 
     });
 }
