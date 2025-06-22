@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+#recipe-book-image {
+    max-height: 5rem;
+}
+
+#title {
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-family: 'Comic Neue', sans-serif;
+}
+
+#search-container {
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#search-form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#search-form input {
+    flex: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#search-form button {
+    background: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#search-icon {
+    height: 25px;
+}
+main img {
+    max-height: 50px;
+}
+
+footer img {
+    max-height: 50px;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 30%;
+    max-height: 30%;
+    border-bottom: solid lightgray 0.2rem;
+}
+
+#title-container {
+    grid-row: 1/2;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+#search-container {
+    grid-row: 2/3;
+}
+
+#recipe-container {
+    border: solid black 0.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
