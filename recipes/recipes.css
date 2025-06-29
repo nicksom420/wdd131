@@ -78,6 +78,16 @@ header {
 }
 
 #recipe-container {
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+#recipe-card {
     border: solid black 0.1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -88,7 +98,7 @@ header {
     align-items: flex-start;
 }
 
-#recipe-container img {
+#recipe-card img {
     height: 450px;
     padding: 10px;
     
@@ -142,7 +152,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-    #recipe-container {
+    #recipe-card {
     flex-direction: column;
     }
 

@@ -9,9 +9,9 @@
     <meta property="og:image" content="images/sweet-potato-waffle-md.jpeg">
     <meta property="og:url" content="nicksom420.github.io/wdd131/recipes/index.html">
     <meta name="twitter:card" content="images/recipe-book.png">
-    <title>Document</title>
+    <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" type="module"></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
         </div>
         <div id="search-container">
             <form id="search-form">
-                <input type="text" placeholder="Find a recipe">
+                <input type="text" id="search-input" placeholder="Find a recipe">
                 <button type="submit">
                     <img id="search-icon" src="images/search.svg" alt="search-bar-icon">
                 </button>
@@ -30,22 +30,24 @@
     </header>
     <main>
         <div id="recipe-container">
-            <img src="images/sweet-potato-waffle-md.jpg" alt="sweet-potato-waffle">
-            <div class="recipe-text">
-                <ul id="tags">
-                    <li class="tag">Waffles</li>
-                    <li class="tag">Sweet Potato</li>
-                    <li class="tag">Side</li>
-                </ul>
-                <h1 id="recipe-title">Sweet Potato Waffles</h1>
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
-	                <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p id="description">'Savory waffles made with Sweet potato with a hint of Ginger'</p>
+            <div id="recipe-card">
+                <img src="images/sweet-potato-waffle-md.jpg" alt="sweet-potato-waffle">
+                <div class="recipe-text">
+                    <ul id="tags">
+                        <li class="tag">Waffles</li>
+                        <li class="tag">Sweet Potato</li>
+                        <li class="tag">Side</li>
+                    </ul>
+                    <h1 id="recipe-title">Sweet Potato Waffles</h1>
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p id="description">'Savory waffles made with Sweet potato with a hint of Ginger'</p>
+                </div>
             </div>
         </div>
     </main>
