@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #780000;
+  --secondary-color: #003049;
+  --accent1-color: #C1121F;
+  --accent2-color: #FDF0D5;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Merriweather", serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--primary-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 300px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    color: var(--accent2-color);   
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+}
+
+header img {
+    max-width: 8rem;
+    padding: 0.5rem;
+}
+
+main {
+    margin: 0 1rem;
+    flex: 1;
+}
+
+.entry-heading {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+#entry-toolbar {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#entry-toolbar input {
+    font-size: 2rem;
+    font-size: var(--paragraph-font);
+}
+
+#entry-toolbar select {
+    font-size: 2rem;
+}
+
+#entry-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry {
+    display: grid;
+    grid-template-rows: 1fr,1fr ;
+    grid-template-columns: 2fr 1fr ;
+    border: solid var(--secondary-color) 0.1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.date {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    margin-left: 1rem;
+}
+
+.description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.25rem;
+    font-family: var(--paragraph-font);
+    margin-left: 1rem;
+}
+
+.image {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    max-height: 20rem;
+}
+
+footer {
+    background-color: var(--secondary-color) ;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.75rem 10rem;
+    margin: 2rem;
+    
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+/* ---------CSS for subpage----------- */
+
+form {
+    border: solid black 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 30rem;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+}
+
+input {
+    font-size: 1.25rem;
+    font-family: var(--paragraph-font);
+}
+
+#date-container {
+    grid-column: 1/2;
+    display: flex;
+    max-width: 10rem;
+    flex-direction: column;
+}
+
+#image-container {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#description-input {
+    grid-column: 1/3;
+    resize: none;
+}
+
+form button {
+    grid-column: 1/3;
+    font-family: var(--heading-font);
+}
+
+
+

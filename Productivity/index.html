@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Journal Entries</title>
+    <link rel="stylesheet" href="productivity.css">
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <img src="images/logo.png" alt="site-logo">
+            <a href="form.html">Create Entry</a>
+        </nav>
+    </header>
+    <h1 class="entry-heading">Entries</h1>
+    <div id="entry-toolbar">
+        <input type="search" placeholder="Search by date" name="search">
+        <select id="filter" name="filter">
+            <option value="newest">Newest to Oldest</option>
+            <option value="oldest">Oldest to Newest</option>
+        </select>
+    </div>
+    <main>
+        <div id="entry-container">
+            <!--Place where we add the entries dynamically-->
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="site-plan.html">Site-Plan</a>
+        </nav>
+    </footer>
+</body>
+</html>

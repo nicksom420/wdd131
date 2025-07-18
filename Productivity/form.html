@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Progress Entry</title>
+    <link rel="stylesheet" href="productivity.css">
+    <script type="module" src="form.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <img src="images/logo.png" alt="site-logo">
+            <a href="form.html">Create Entry</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="entry-heading">Enter New Progression Entry</h1>
+        <div id="form-container">
+            <form>
+                <div id="date-container">
+                    <label for="date-input">Enter Date:</label>
+                    <input type="date" id="date-input" name="date-input">
+                </div>
+                
+                <div id="image-container">
+                    <label for="image-input">Upload Image:</label>
+                    <input type="file" id="image-input" name="image-input">
+                </div>
+
+
+                <label for="description-input">Enter Description:</label>
+                <textarea id="description-input" name="description-input" rows="5" cols="40"></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="site-plan.html" target="_blank">Site-Plan</a>
+        </nav>
+    </footer>
+</body>
+</html>
