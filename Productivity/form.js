@@ -1,6 +1,5 @@
-// Functions specific to form.html
-
 import defaultEntries from './entries.mjs';
+// Functions specific to form.html
 
 function loadEntries() {
   const existingEntries = localStorage.getItem('entries');

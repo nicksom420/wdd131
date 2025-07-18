@@ -109,7 +109,7 @@ main {
 
 .entry {
     display: grid;
-    grid-template-rows: 1fr,1fr ;
+    grid-template-rows: 1fr 1fr ;
     grid-template-columns: 2fr 1fr ;
     border: solid var(--secondary-color) 0.1rem;
     margin-top: 2rem;

@@ -1,6 +1,5 @@
-// Functions specific to the main page index.html
-
 import defaultEntries from './entries.mjs';
+// Functions specific to the main page index.html
 
 function loadEntries() { // Since each page is a separate javascript environment. I need to share them through local storage
   const existingEntries = localStorage.getItem('entries');
