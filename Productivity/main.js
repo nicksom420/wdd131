@@ -32,7 +32,7 @@ function entryTemplate(entry)
     return ` <div class="entry">
                 <h1 class="date">${entry.date}</h1>
                 <p class="description">${entry.description}</p>
-                ${entry.image ? `<img class="image" src="${entry.image}" alt="entry-image">` : ''}
+                ${entry.image ? `<img class="image" src="${entry.image}" alt="entry-image" width="200" height="100">` : ''}
             </div>`;
             // If there is an image put the correct html in, if there is not leave blank ''
 }

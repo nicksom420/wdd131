@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -138,7 +137,8 @@ main {
     justify-self: center;
     align-self: center;
     padding: 1rem;
-    max-height: 20rem;
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -204,6 +204,19 @@ input {
 form button {
     grid-column: 1/3;
     font-family: var(--heading-font);
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
 
